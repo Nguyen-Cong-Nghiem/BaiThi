@@ -38,7 +38,7 @@ public class Rat {
         return name;
     }
 
-    public void run(int speed) {
-        System.out.println("Chuot dang chay toc do: " + getSpeed());
+    public String run() {
+        return ("Chuột đang chạy với tốc độ: " + getSpeed());
     }
 }

@@ -28,8 +28,8 @@ public class Cat {
         return speed;
     }
 
-    public void run(int speed) {
-        System.out.print("Mèo đang chạy với tốc độ: " +getSpeed());
+    public String run() {
+        return("Mèo đang chạy với tốc độ: " +getSpeed());
     }
 
     public boolean catched(Rat rat) {
@@ -39,12 +39,12 @@ public class Cat {
         return false;
     }
 
-    public void eat(Rat rat,Rat food) {
+    public String eat(Rat rat) {
         if (rat.getWeight() < 10) {
-            System.out.println("Mum mum,chuột hơi gầy");
+            return ("Mum mum,chuột hơi gầy.");
         } else if (rat.getWeight() > 10) {
-            System.out.println("Mum mum,chuột béo đấy");
+            return ("Mum mum,chuột béo đấy.");
         }else
-            System.out.println("Meo meo,đói");
+            return ("Meo meo,đói.");
     }
  }
