@@ -28,7 +28,6 @@ public class GameRatAndCat {
 
         String arrCat[]={"Tom","mèo vàng","mèo đen","mèo trắng","mèo anh"};
 
-
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Hãy nhập vào tên chuột bạn muốn tìm:");
@@ -37,9 +36,8 @@ public class GameRatAndCat {
 
         for (int i = 0; i < arrRat.length; i++) {
             if (mouse == arrRat[i]) {
-                System.out.println(i);
+                System.out.println();
             }
-//                System.out.println("fail");
         }
 
     }
